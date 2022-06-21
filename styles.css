@@ -33,3 +33,16 @@ h2 {
     font-size: 1.75rem;
 }
 
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #124a15;
+}
+
+a:hover {
+    text-decoration: rgba(166, 7, 36) wavy underline;
+}
+
+.japanese {
+    font-weight: normal;
+}
