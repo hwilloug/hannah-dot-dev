@@ -3,11 +3,16 @@
 html {
     background-image: url("assets/ichigo-bg.png");
     background-size: 200px;
+    height: 100%;
+    width: 100%;
 }
 
 body {
+    background-image: url("assets/falling-stars-border.gif");
+    background-size: 100% 50%;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 header {
@@ -17,24 +22,46 @@ header {
 }
 
 main {
-    background-color: rgba(237, 209, 219, 0.7);
     display: flex;
     flex-direction: column;
     max-width: 60%;
     align-self: center;
     margin-top: 40px;
     padding: 20px 50px;
+
+    background-color: rgba(237, 209, 219, 0.7);
+    box-shadow: 5px 5px 25px #124a15, -5px -5px 25px #124a15;
+
     font-family: 'Gruppo', cursive;
     font-size: 1.5rem;
     color: #124a15;
 }
 
+@keyframes welcome-banner {
+    from {
+        font-size: 5rem;
+    }
+    to {
+        font-size: 5.5rem;
+    }
+}
+
+#welcome-container {
+    margin-top: -50px;
+    margin-bottom: -30px;
+    height: 15rem;
+}
+
 h1 {
     font-family: 'Bungee Shade', cursive;
     font-size: 5rem;
-    margin-top: -20px;
-    margin-bottom: -50px;
     color: rgba(166, 7, 36);
+
+    animation-name: welcome-banner;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 h2 {
