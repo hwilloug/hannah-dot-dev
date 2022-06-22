@@ -10,7 +10,8 @@ window.setInterval(function() {
         top: y,
         left: x
     }, {
-        duration: 75
+        duration: 75,
+        animationTimingFunction: 'linear'
     })
 }, 75);
 
