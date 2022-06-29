@@ -37,19 +37,10 @@ main {
     color: #124a15;
 }
 
-@keyframes welcome-banner {
-    from {
-        font-size: 5rem;
-    }
-    to {
-        font-size: 5.5rem;
-    }
-}
-
 #welcome-container {
-    margin-top: -50px;
-    margin-bottom: -30px;
-    height: 15rem;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    /*height: 15rem;*/
 }
 
 h1 {
