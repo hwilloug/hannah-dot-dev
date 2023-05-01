@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-image: url("assets/falling-stars-border.gif");
+    /*background-image: url("assets/falling-stars-border.gif");*/
     background-size: 100% 50%;
     display: flex;
     flex-direction: column;
@@ -27,6 +27,7 @@ main {
     max-width: 60%;
     align-self: center;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px 50px;
 
     background-color: rgba(237, 209, 219, 0.7);
