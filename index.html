@@ -13,100 +13,130 @@
     <div id="welcome-container">
         <img src="assets/text.gif">
     </div>
-    <h2>Hannah's Personal Project Landing Page</h2>
-
-    <form action="https://bmc.link/hannahjanew" target="_blank">
-        <button type="submit" formaction="https://bmc.link/hannahjanew">📖 Buy Me A Book</button>
-    </form>
+    <h2 id="subheader">Hannah Willoughby's Official Landing Page</h2>
 </header>
 
 <main>
-    <div class="project">
-        <a href="https://raincloud.poppyland.dev/home" target="_blank">Poppyland Raincloud</a>
-        <ul>
-            <li>A website for a raspberry pi that controls to a solenoid valve.</li>
-            <li>FastAPI server hosted with nginx on a raspberry pi</li>
-            <li>Requires auth through nginx, sorry!</li>
+    <div class="project centered">
+        <h2>About Me</h2>
+    </div>
+    <div class="project" id="about-me">
+        <img src="assets/me.jpg" id="profile-pic" />
+        <p>Hello, world! It's me, Hannah. I'm a full-stack software engineer for a company called OM1, and I live in Fort Mill, SC with my three cats: Poppy, Big Buddy, and Tiger. You'll see a lot of references to Poppy in my projects! Follow along as I grow in my software engineering skills and career.</p>
+    </div>
+    <div class="project centered">
+        <h3>Links</h3>
+        <ul id="links">
+            <li><a href="https://github.com/hwilloug" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon" /> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/hannah-willoughby-6a8664160/" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" class="icon" /> LinkedIn</a></li>
+            <li><a href="https://www.goodreads.com/hannah218"><img src="https://cdn.icon-icons.com/icons2/1125/PNG/512/1486164214-goodreadsround1_79642.png" class="icon" /> Goodreads</a></li>
+            <li><a href="https://blog.poppyland.dev"><img src="https://images.rawpixel.com/image_png_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNC1udW5ueS0xNC5wbmc.png" class="icon" /> Blog</a></li>
         </ul>
     </div>
+    <div class="project centered">
+        <h2>Projects</h2>
+    </div>
     <div class="project">
-        <a href="https://journal.poppyland.dev" target="_blank">Poppyland Journal</a>
+        <h3><a href="https://raincloud.poppyland.dev/home" target="_blank">Poppyland Raincloud</a></h3>
+        <img class="project-img" src="assets/poppylandraincloud.png" />
+        <ul>
+            <li>A website for a Raspberry Pi that controls to a solenoid valve.</li>
+            <li>FastAPI server hosted with nginx on a raspberry pi</li>
+            <li>Requires auth through nginx, so you can't play around with it, sorry!</li>
+        </ul>
+        <a href="https://github.com/hwilloug/raincloud" target="_blank"><button class="code-btn">CODE</button></a>
+    </div>
+    <div class="project">
+        <h3><a href="https://journal.poppyland.dev" target="_blank">Poppyland Journal</a></h3>
+        <img class="project-img" src="assets/poppylandjournal.png" />
         <ul>
             <li>A journal/diary website</li>
             <li>React frontend served via S3/Cloufront. Serverless AWS backend (Lambda, API Gateway, DynamoDB)</li>
             <li>Auth0 Authorization layer</li>
-            <li><a href="https://github.com/hwilloug/poppyland-journal" target="_blank">Code</a></li>
         </ul>
+        <a href="https://github.com/hwilloug/poppyland-journal" target="_blank"><button class="code-btn">CODE</button></a>
     </div>
     <div class="project">
-        <a href="https://poppyland.dev" target="_blank">Poppyland Blog</a>
+        <h3><a href="https://blog.poppyland.dev" target="_blank">Poppyland Blog</a></h3>
+        <img src="assets/poppylandblog.png" class="project-img" />
         <ul>
             <li>My personal blog</li>
             <li>Vue frontend with AWS Lambda/API Gateway backend</li>
             <li>Served via AWS S3/Cloudfront</li>
-            <li><a href="https://github.com/hwilloug/hannah-blog" target="_blank">Code</a></li>
         </ul>
+        <a href="https://github.com/hwilloug/hannah-blog" target="_blank"><button class="code-btn">CODE</button></a>
     </div>
     <div class="project">
-        hannah-dot-dev
+        <h3>hannah-dot-dev</h3>
         <ul>
             <li>My personal projects page (this page!)</li>
             <li>Basic HTML/CSS</li>
-            <li><a href="https://github.com/hwilloug/hannah-dot-dev" target="_blank">Code</a></li>
         </ul>
+        <a href="https://github.com/hwilloug/hannah-dot-dev" target="_blank"><button class="code-btn">CODE</button></a>
     </div>
     <div class="project">
-        <a href="https://d1pvqbo0it77t5.cloudfront.net/" target="_blank">TegaCayAnimalHospital.com</a>
+        <h3>TegaCayAnimalHospital.com</h3>
+        <img class="project-img" src="assets/tcahdotcom.png" />
         <ul>
             <li>A website for my dad's veterinary clinic</li>
             <li>React frontend with Django backend</li>
             <li>Served via AWS S3/Cloudfront (frontend) and AWS Fargate (backend)</li>
-            <li><a href="https://github.com/hwilloug/tcah" target="_blank">Code</a></li>
         </ul>
+        <a href="https://github.com/hwilloug/tcah" target="_blank"><button class="code-btn">CODE</button></a>
     </div>
     <div class="project">
-        <a href="https://bigbuddyinabox.com" target="blank">BigBuddyInABox.com</a>
+        <h3><a href="https://bigbuddyinabox.com" target="blank">BigBuddyInABox.com</a></h3>
         <ul>
             <li>Silly website for pictures of my cats</li>
             <li>React frontend</li>
             <li>Served via AWS S3/Cloudfront/Route53</li>
-            <li><a href="https://github.com/hwilloug/bigbuddyinabox">Code</a></li>
         </ul>
+        <a href="https://github.com/hwilloug/bigbuddyinabox"><button class="code-btn">CODE</button></a>
     </div>
     <div class="project">
-        <a href="https://noseyneighborband.com" target="blank">NoseyNeighborBand.com</a>
+        <h3><a href="https://noseyneighborband.com" target="blank">NoseyNeighborBand.com</a></h3>
+        <img class="project-img" src="assets/noseyneighbor.png" />
         <ul>
             <li>Website for a local band</li>
             <li>React frontend</li>
             <li>Served via AWS S3/Cloudfront/Route53</li>
-            <li><a href="https://github.com/hwilloug/noseyneighbors">Code</a></li>
         </ul>
+        <a href="https://github.com/hwilloug/noseyneighbors"><button class="code-btn">CODE</button></a>
     </div>
     
     <div class="project">
-        <a href="https://github.com/hwilloug/dnd-character-sheet" target="_blank">DND Character Sheet Web App</a>
+        <h3>DND Character Sheet Web App</h3>
         <ul>
             <li>An interactive DND Character Sheet</li>
             <li>Vue frontend and Express backend</li>
         </ul>
+        <a href="https://github.com/hwilloug/dnd-character-sheet" target="_blank"><button class="code-btn">CODE</button></a>
     </div>
     <div class="project">
-        <a href="https://github.com/hwilloug/yomiyasui-mukashibanashi" class="japanese">よみやすい昔話</a>
+        <h3 class="japanese">よみやすい昔話</h3>
         <ul>
             <li>An interactive Japanese reading website. Hover over words to see translations</li>
             <li>Flask frontend and backend</li>
         </ul>
+        <a href="https://github.com/hwilloug/yomiyasui-mukashibanashi"><button class="code-btn">CODE</button></a>
     </div>
     
     <div class="project">
-        <a href="https://github.com/hwilloug/tavern-bots">Tavern Bots</a>
+        <h3>Tavern Bots</h3>
         <ul>
             <li>Bots for my friend's Mastodon server</li>
             <li>AWS Lambdas that run on a cron schedule</li>
         </ul>
+        <a href="https://github.com/hwilloug/tavern-bots"><button class="code-btn">CODE</button></a>
     </div>
 </main>
-
+<footer>
+    <div class="project">
+        <form action="https://bmc.link/hannahjanew" target="_blank">
+            <button type="submit" formaction="https://bmc.link/hannahjanew">📖 Buy Me A Book</button>
+        </form>
+    </div>
+</footer>
 
 </body>
 <script src="script.js"></script> 

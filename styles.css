@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Creepster&family=Gruppo&display=swap');
 
 html {
-    background-image: url("assets/ichigo-bg.png");
-    background-size: 200px;
+    background-image: url("assets/piplup-pika-bg.png");
+    background-size: 100px;
     height: 100%;
     width: 100%;
+    background-attachment: fixed;
 }
 
 body {
@@ -13,31 +14,39 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    align-items: center;
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: rgb(251, 241, 254);
+    max-width: 675px;
+    box-shadow: 10px 10px rgb(229, 135, 255);
+    border: 2px solid rgb(229, 135, 255);
+    padding: 20px 200px;
+    flex-grow: 1;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    max-width: 675px;
     align-self: center;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 20px 50px;
 
     font-size: 1.5rem;
-    color: #124a15;
+    color: black;
 }
 
 .project {
-    background-color: #ffebfa;
-    box-shadow: 5px 5px #124a15;
-    border: 1px solid #124a15;
+    background-color: rgb(251, 241, 254);
+    box-shadow: 5px 5px rgb(229, 135, 255);
+    border: 1px solid rgb(229, 135, 255);
     padding: 20px;
     margin: 20px;
 }
@@ -51,7 +60,7 @@ main {
 h1 {
     font-family: 'Bungee Shade', cursive;
     font-size: 5rem;
-    color: rgba(166, 7, 36);
+    color: rgb(116, 0, 148);
 
     animation-name: welcome-banner;
     animation-duration: 2s;
@@ -60,20 +69,24 @@ h1 {
     animation-timing-function: ease-in-out;
 }
 
-h2 {
+#subheader {
     font-family: 'Creepster', cursive;
-    color: rgba(166, 7, 36);
+    color: rgb(116, 0, 148);
     font-size: 1.75rem;
+}
+
+h2 {
+    color: rgb(116, 0, 148);
 }
 
 a {
     font-weight: bold;
     text-decoration: none;
-    color: rgba(166, 7, 36);
+    color: rgb(116, 0, 148);
 }
 
 a:hover {
-    text-decoration: rgba(166, 7, 36) wavy underline;
+    text-decoration: rgb(116, 0, 148) wavy underline;
 }
 
 .japanese {
@@ -88,7 +101,42 @@ a:hover {
 
 button {
     color: white;
-    background-color: #124a15;
+    background-color: rgb(116, 0, 148);
     padding: 5px 10px;
     border-radius: 10px;
+}
+
+.project-img {
+    width: 575px;
+    border: 2px solid rgb(229, 135, 255)
+}
+
+.centered {
+    text-align: center;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 0 0;
+    flex-shrink: 0;
+    flex-grow: 0; 
+    border: 1px solid rgb(229, 135, 255)
+}
+
+.icon {
+    width: 25px;
+}
+
+#links {
+    list-style-type: none;
+}
+
+#links li {
+    padding: 10px 50px 0px 10px;
 }
