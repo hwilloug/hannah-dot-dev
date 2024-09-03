@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Creepster&family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
 
 html {
     background-image: url("assets/piplup-pika-bg.png");
@@ -61,9 +61,10 @@ main {
 }
 
 h1 {
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Gluten', cursive;
     font-size: 5rem;
     color: rgb(116, 0, 148);
+    font-weight: bold;
 
     animation-name: welcome-banner;
     animation-duration: 2s;
@@ -73,13 +74,18 @@ h1 {
 }
 
 #subheader {
-    font-family: 'Creepster', cursive;
+    font-family: 'Gluten', cursive;
     color: rgb(116, 0, 148);
     font-size: 1.75rem;
 }
 
 h2 {
     color: rgb(116, 0, 148);
+    font-family: 'Gluten', cursive;
+}
+
+h3 {
+    font-family: 'Gluten', cursive;
 }
 
 a {
@@ -121,6 +127,7 @@ button {
 #about-me {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #profile-pic {
