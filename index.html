@@ -13,16 +13,21 @@
     <div id="welcome-container">
         <img src="./assets/welcome.gif" id="welcome-text" />
     </div>
-    <h2 id="subheader">Hannah Willoughby's Official Landing Page</h2>
+    <div id="subheader-container">
+        <h2 id="subheader" class="centered">Hannah Willoughby's</h2><h2 id="subheader" class="centered">Official Landing Page</h2>
+    </div>
 </header>
 
 <main>
-    <div class="project centered">
+    <div class="centered header">
         <h2>About Me</h2>
     </div>
     <div class="project centered" id="about-me">
         <img src="assets/me.jpg" id="profile-pic" />
-        <p>Hello, world! It's me, Hannah. I'm a full-stack software engineer for a company called OM1, and I live in Fort Mill, SC with my partner Danny and our four cats: Poppy, Big Buddy, Tigerton, and Ray. You'll see a lot of references to Poppy in my projects! Follow along as I grow in my software engineering skills and career.</p>
+        <div>
+            <p>Hello, world! It's me, Hannah. I'm a full-stack software engineer for a company called OM1, and I live in Fort Mill, SC with my partner Danny and our four cats: Poppy, Big Buddy, Tigerton, and Ray. You'll see a lot of references to Poppy in my projects!</p>
+            <p>Follow along as I grow in my software engineering skills and career.</p>
+        </div>
     </div>
     <div class="project centered">
         <h3>Links</h3>
@@ -33,31 +38,61 @@
             <li><a href="https://hannahshobbyroom.com" target="_blank"><img src="https://images.rawpixel.com/image_png_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNC1udW5ueS0xNC5wbmc.png" class="icon" /> Blog</a></li>
         </ul>
     </div>
-    <div class="project centered">
+    <div class="centered header">
         <h2>Projects</h2>
     </div>
     <div class="project">
-        <h3><a href="https://hannahshobbyroom.com" target="_blank">Hannah's Hobby Room</a></h3>
+        <h3>Hannah's Hobby Room</h3>
+        <h5>April 2021 - Current</h5>
         <img src="assets/hannahshobbyroom.png" class="project-img" />
-        <ul>
-            <li>My personal blog</li>
-            <li>Vue frontend with AWS Lambda/API Gateway backend</li>
-            <li>Served via AWS S3/Cloudfront</li>
-        </ul>
+        <div>
+            <h5>Description</h5>
+            <p style="padding-left: 24px;">My personal blog</p>
+        </div>
+        <div>
+            <h5>Implementation Details</h5>
+            <ul>
+                <li>Started as Vue frontend with AWS Lambda/API Gateway backend</li>
+                <li>Currently built in React with AWS Lambda/API Gateway backend</li>
+                <li>Frontend served via AWS S3/Cloudfront</li>
+                <li>AWS Aurora RDS Database</li>
+                <li>Models and migrations using SQLAlchemy & Alembic</li>
+            </ul>
+        </div>
         <a href="https://github.com/hwilloug/hannah-blog" target="_blank"><button class="code-btn">CODE</button></a>
+        <a href="https://hannahshobbyroom.com" target="_blank"><button class="visit-btn">Visit</button></a>
     </div>
     <div class="project">
-        <h3><a href="https://journal.poppyland.dev" target="_blank">Whispering Willow Diary</a></h3>
+        <h3>Whispering Willow Diary</h3>
+        <h5>October 2023 - Current</h5>
         <img class="project-img" src="assets/whisperingwillowdiary.png" />
-        <ul>
-            <li>A journal/diary website geared towards people with mood disorders</li>
-            <li>React frontend served via S3/Cloufront. Serverless AWS backend (Lambda, API Gateway, DynamoDB)</li>
-            <li>Auth0 Authorization layer</li>
-        </ul>
+        <div>
+            <h5>Description</h5>
+            <ul>
+                <li>A journaling/diary website geared towards people with mood disorders and substance use issues </li>
+                <li>Visualization of mood, mental health, sleep, drug use</li>
+                <li>Set goals and track habits</li>
+                <li>And, of course, it's also just a plain ol' journal.</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Implementation Details</h5>
+            <ul>
+                <li>React frontend served via S3/Cloufront. Serverless AWS backend (Lambda, API Gateway, DynamoDB)</li>
+                <li>Auth0 Authorization layer</li>
+                <li>Highcharts for visualizations</li>
+                <li>Redux saga</li>
+                <li>DynamoDB table</li>
+                <li>Deployed via AWS CodePipeline</li>
+                <li>Currently refactoring, stay tuned</li>
+            </ul>
+        </div>
         <a href="https://github.com/hwilloug/poppyland-journal" target="_blank"><button class="code-btn">CODE</button></a>
+        <a href="https://journal.poppyland.dev" target="_blank"><button class="visit-btn">Visit</button></a>
     </div>
     <div class="project">
-        <h3><a href="https://home.poppyland.dev" target="_blank">Poppyland Home</a></h3>
+        <h3>Poppyland Home</h3>
+        <h5>November 2023</h5>
         <img class="project-img" src="assets/poppylandraincloud.png" />
         <ul>
             <li>A website served on a Raspberry Pi that controls some things around my house.</li>
@@ -70,6 +105,7 @@
     </div>
     <div class="project">
         <h3>hannah-dot-dev</h3>
+        <h5>June 2022 - Current</h5>
         <ul>
             <li>My personal projects page (this page!)</li>
             <li>Basic HTML/CSS</li>
@@ -78,6 +114,7 @@
     </div>
     <div class="project">
         <h3>TegaCayAnimalHospital.com</h3>
+        <h5>May 2023</h5>
         <img class="project-img" src="assets/tcahdotcom.png" />
         <ul>
             <li>A website for my dad's veterinary clinic</li>
@@ -88,6 +125,7 @@
     </div>
     <div class="project">
         <h3><a href="https://bigbuddyinabox.com" target="blank">BigBuddyInABox.com</a></h3>
+        <h5>May 2023</h5>
         <ul>
             <li>Silly website for pictures of my cats</li>
             <li>React frontend</li>
@@ -96,7 +134,8 @@
         <a href="https://github.com/hwilloug/bigbuddyinabox"><button class="code-btn">CODE</button></a>
     </div>
     <div class="project">
-        <h3><a href="https://noseyneighborband.com" target="blank">NoseyNeighborBand.com</a></h3>
+        <h3>NoseyNeighborBand.com</h3>
+        <h5>May 2023</h5>
         <img class="project-img" src="assets/noseyneighbor.png" />
         <ul>
             <li>Website for a local band</li>
@@ -108,6 +147,7 @@
     
     <div class="project">
         <h3>DND Character Sheet Web App</h3>
+        <h5>August 2020 - May 2021</h5>
         <ul>
             <li>An interactive DND Character Sheet</li>
             <li>Vue frontend and Express backend</li>
@@ -116,6 +156,7 @@
     </div>
     <div class="project">
         <h3 class="japanese">よみやすい昔話</h3>
+        <h5>May 2021</h5>
         <ul>
             <li>An interactive Japanese reading website. Hover over words to see translations</li>
             <li>Flask frontend and backend</li>
@@ -125,6 +166,7 @@
     
     <div class="project">
         <h3>Tavern Bots</h3>
+        <h5>June 2022</h5>
         <ul>
             <li>Bots for my friend's Mastodon server</li>
             <li>AWS Lambdas that run on a cron schedule</li>

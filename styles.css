@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+ES+Deco:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html {
     background-image: url("assets/piplup-pika-bg.png");
@@ -22,7 +25,7 @@ header {
     flex-direction: column;
     align-items: center;
 
-    background-color: rgb(251, 241, 254);
+    background-color: #f5dd76;
     max-width: 675px;
     box-shadow: 10px 10px rgb(229, 135, 255);
     border: 2px solid rgb(229, 135, 255);
@@ -73,19 +76,41 @@ h1 {
     animation-timing-function: ease-in-out;
 }
 
+#subheader-container {
+    margin: 24px 0;
+}
+
 #subheader {
     font-family: 'Gluten', cursive;
     color: rgb(116, 0, 148);
     font-size: 1.75rem;
+    margin: 0;
 }
 
-h2 {
+.header {
+    background-color: #f5dd76;
+    box-shadow: 5px 5px rgb(229, 135, 255);
+    border: 1px solid rgb(229, 135, 255);
+    padding: 20px;
+    margin: 20px;
+}
+
+.header h2 {
     color: rgb(116, 0, 148);
     font-family: 'Gluten', cursive;
 }
 
 h3 {
     font-family: 'Gluten', cursive;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+p, li, h5 {
+    font-family: "Courier Prime", monospace;
 }
 
 a {
@@ -108,11 +133,21 @@ a:hover {
     right: 1000px;
 }
 
-button {
+.code-btn {
     color: white;
     background-color: rgb(116, 0, 148);
     padding: 5px 10px;
+    margin: 0px 12px;
     border-radius: 10px;
+}
+
+.visit-btn {
+    color: black;
+    background-color: #f5dd76;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0px 12px;
+    text-transform: uppercase;
 }
 
 .project-img {
@@ -128,6 +163,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 #profile-pic {
@@ -149,4 +185,11 @@ button {
 
 #links li {
     padding: 10px 50px 0px 10px;
+}
+
+#links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
 }
