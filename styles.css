@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    /*background-image: url("assets/falling-stars-border.gif");*/
     background-size: 100% 50%;
     display: flex;
     flex-direction: column;
@@ -26,24 +25,71 @@ header {
     align-items: center;
 
     background-color: #f5dd76;
-    max-width: 675px;
     box-shadow: 10px 10px rgb(229, 135, 255);
     border: 2px solid rgb(229, 135, 255);
-    padding: 20px 200px;
+    padding: 20px;
     flex-grow: 1;
+    min-width: 90%;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    max-width: 675px;
     align-self: center;
-    margin-top: 40px;
     margin-bottom: 40px;
-    padding: 20px 50px;
-
     font-size: 1.5rem;
     color: black;
+}
+
+@media only screen and (max-width: 599px) {
+    main {
+        padding: 20px;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        padding: 20px 50px;
+        max-width: 675px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #76cdf5;
+    box-shadow: 5px 5px rgb(229, 135, 255);
+    border: 1px solid rgb(229, 135, 255);
+    padding: 20px;
+    margin: 20px;
+    margin-top: 42px;
+    flex-grow: 0;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: 'Gluten', cursive;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
 }
 
 .project {
@@ -55,12 +101,13 @@ main {
 }
 
 #welcome-container {
-    margin-bottom: -20px;
-    /*height: 15rem;*/
+    text-align: center;
 }
 
 #welcome-text {
-    height: 100px;
+    height: 50px;
+    margin-top: 24px;
+    width: fit-content;
 }
 
 h1 {
@@ -68,12 +115,6 @@ h1 {
     font-size: 5rem;
     color: rgb(116, 0, 148);
     font-weight: bold;
-
-    animation-name: welcome-banner;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
 }
 
 #subheader-container {
@@ -138,16 +179,36 @@ a:hover {
     background-color: rgb(116, 0, 148);
     padding: 5px 10px;
     margin: 0px 12px;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    outline: 2px outset rgb(229, 135, 255);
+    font-weight: bold;
+    border: none;
+}
+
+.code-btn:hover {
+    background-color: rgb(229, 135, 255);
+    color: black;
+    cursor: pointer;
+    outline: 2px inset rgb(116, 0, 148);
 }
 
 .visit-btn {
-    color: black;
-    background-color: #f5dd76;
+    color: white;
+    background-color: #d3ad00;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0px 12px;
     text-transform: uppercase;
+    outline: 2px outset #f5dd76;
+    border: none;
+}
+
+.visit-btn:hover {
+    background-color: #f5dd76;
+    color: rgb(116, 0, 148);
+    cursor: pointer;
+    outline: 2px inset #d3ad00;
 }
 
 .project-img {
@@ -192,4 +253,39 @@ a:hover {
     align-items: center;
     gap: 12px;
     justify-content: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content 1fr;
+    font-family: "Courier Prime", monospace;
+}
+
+.skills-grid div {
+    margin: 12px;
+}
+
+.skills-grid img {
+    width: 30px;
+}
+
+.skill-level {
+    text-align: right;
+}
+
+#certification {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+#certification img {
+    width: 100%;
+}
+
+.new {
+    color: #639bff;
+    display: inline;
+    font-size: 1rem;
 }
