@@ -139,6 +139,10 @@ h1 {
 .header h2 {
     color: rgb(116, 0, 148);
     font-family: 'Gluten', cursive;
+    animation-duration: 1.25s;
+    animation-name: bounceletters;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 h3 {
@@ -288,4 +292,13 @@ a:hover {
     color: #639bff;
     display: inline;
     font-size: 1rem;
+}
+
+@keyframes bounceletters {
+    from {
+        letter-spacing: normal;
+    }
+    to {
+        letter-spacing: 10px;
+    }
 }
