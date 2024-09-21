@@ -4,11 +4,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Hannah's Projects</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 </head>
 <body>
-<p id="mouse-position" data-x="0" data-y="0"></p>
-<!--<img src="assets/butterfly-sprite.gif" id="pointer-sprite-image" />-->
 <header>
     <div id="welcome-container">
         <img src="./assets/welcome.gif" id="welcome-text" />
@@ -24,7 +21,7 @@
         <li><a href="#skills" >Skills</a></li>
         <li><a href="#certifications" >Certifications</a></li>
         <li><a href="#active-projects" >Active Projects</a></li>
-        <li><a href="#inactive-projects" >Inactive Projects</a></li>
+        <li><a href="#inactive-projects">Inactive Projects</a></li>
     </ul>
 </nav>
 
@@ -140,8 +137,6 @@
             <div class="skill-level"><img src="assets/skills-3.png" /></div>
             <div>Route53</div>
             <div class="skill-level"><img src="assets/skills-2.png" /></div>
-            <div>Certificates Manager</div>
-            <div class="skill-level"><img src="assets/skills-2.png" /></div>
             <div>SES</div>
             <div class="skill-level"><img src="assets/skills-2.png" /></div>
             <div>SNS</div>
@@ -178,7 +173,7 @@
             <div>Redux/Saga</div>
             <div class="skill-level"><img src="assets/skills-1.png" /></div>
             <div>Clerk <div class="new">New</div></div>
-            <div class="skill-level"><img src="assets/skills-2.png" /></div>
+            <div class="skill-level"><img src="assets/skills-1.png" /></div>
             <div>tRPC <div class="new">New</div></div>
             <div class="skill-level"><img src="assets/skills-2.png" /></div>
             <div>TailwindCSS <div class="new">New</div></div>
@@ -186,6 +181,8 @@
             <div>Drizzle <div class="new">New</div></div>
             <div class="skill-level"><img src="assets/skills-2.png" /></div>
             <div>SQLAlchemy</div>
+            <div class="skill-level"><img src="assets/skills-1.png" /></div>
+            <div>three/react-three-fiber<div class="new">New</div></div>
         </grid>
     </div>
     <div id="certifications" class="centered header">
@@ -204,6 +201,7 @@
     <div class="project">
         <h3>Hannah's Hobby Room</h3>
         <h5>April 2021 - Current</h5>
+        <img src="assets/hobby_room_model.jpeg" class="project-img" />
         <img src="assets/hannahshobbyroom.png" class="project-img" />
         <div>
             <h5>Description</h5>
@@ -217,10 +215,13 @@
                 <li>Frontend served via AWS S3/Cloudfront</li>
                 <li>AWS Aurora RDS Database</li>
                 <li>Models and migrations using SQLAlchemy & Alembic</li>
+                <li>Infrastructure defined in terraform</li>
+                <li><code>react-three-fiber</code> and related used to create the welcome page's interactable model</li>
             </ul>
         </div>
         <a href="https://github.com/hwilloug/hannah-blog" target="_blank"><button class="code-btn">CODE</button></a>
-        <a href="https://hannahshobbyroom.com" target="_blank"><button class="visit-btn">Visit</button></a>
+        <a href="https://hannahshobbyroom.com/welcome" target="_blank"><button class="visit-btn">Visit Model</button></a>
+        <a href="https://hannahshobbyroom.com" target="_blank"><button class="visit-btn">Visit Site</button></a>
     </div>
     <div class="project">
         <h3>Whispering Willow Diary</h3>
@@ -351,7 +352,5 @@
         </form>
     </div>
 </footer>
-
 </body>
-<script src="script.js"></script> 
 </html> 

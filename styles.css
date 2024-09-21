@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     align-items: center;
+    line-height: 1.25;
 }
 
 header {
